@@ -15,3 +15,4 @@ bienvenida =  f" hola (nombre) preciosa"
 print(bienvenida)
 #del  para eliminar datos#
 #operadores de pertenencia = in- not in#
+
