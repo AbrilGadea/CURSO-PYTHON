@@ -5,7 +5,7 @@ diccionario = {
 }
 #devuelve claves y sirve para iterar
 claves = diccionario.keys()
-#print(claves)
+print(claves)
 # obteniendo datos con get, si no encuentra no lanza error sino que continúa
 claves = diccionario.get("nombre")
 print(claves)

@@ -45,6 +45,24 @@ notas2 = diccionario.get('Linguística')
 notas3 = diccionario.get('Literatura francesa')
 print(notas1, notas2, notas3)
 
+#7. Diseña un algoritmo creando una tupla que almacene 3 categorías de música y 
+# luego crea un diccionario donde utilices como clave la tupla y almacenes 2 músicos por categoría de música. 
+# Luego mostrar en pantalla los artistas.
+
+Géneros_Musicales = ("Reguetón", "Cuarteto", "Folclore")
+Artístas = {
+    "Reguetón" : ("Dady Yankee", "Karol G"),
+    "Cuarteto" : ("Ulises Bueno", "Damian Córdoba"),
+    "Folclore" : ("Soledad Pastorutti", "Chaqueño Palavecino"),
+    
+}
+Datos1 = Artístas.get("Reguetón")
+Datos2 = Artístas.get("Cuarteto")
+Datos3 = Artístas.get("Folclore")
+print(Datos1, Datos2, Datos3)
+
+
+
 
 
 
