@@ -20,7 +20,7 @@ busqueda_find = cadena1.find("D")
 #buscamos cadenas en otras cadenas, si no hay coinidencias lanza una excepcion
 busqueda_index = cadena1.index("a")
 
-#si es umerico devolveos true, sino false
+#si es numerico devolveos true, sino false
 es_numerico = cadena1.isnumeric()
 
 

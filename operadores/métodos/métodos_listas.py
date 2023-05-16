@@ -6,6 +6,7 @@ lista = list(["hola", "dalto", 34])
 cantidad_elementos = len(lista)
 
 #agregar un elemento a la lista
+
 lista.append("JJAJAJAJA")
 
 #agregando un elemento a la lista en un índice específico
