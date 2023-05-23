@@ -18,7 +18,7 @@ exponente = 12 **5
 division_baja = 12 // 5
 #resto o módulo
 resto = 12 % 5
-print(suma)
+print(resta)
 
 tipo_de_dato = type (suma) #para ver quétipo de dato nos devuelve
 print(tipo_de_dato)
