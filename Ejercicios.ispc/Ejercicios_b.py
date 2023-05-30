@@ -41,6 +41,9 @@
 # por ejemplo, en el caso de ingresar un 1, deberá mostrar por pantalla “Usted ha seleccionado la opción 1” 
 # y así sucesivamente. Al seleccionar la opción 4 se debe terminar la ejecución del programa.
  
+
+
+
 print("CAJERO AUTOMATICO")
 print("ISPC")
 print("Listado de opciones:")
@@ -49,40 +52,39 @@ print("2)      Extracción de dinero")
 print("3)      Consulta de salto")
 print("4)      Salir")
 
+    
 ingreso = input("Ingrese su selección: ")
 saldo_inicial = 10000
-contador = 0
 
-while  contador == 4:
-    ingreso <= "4",
-    print("Retire su tarjeta") 
-    contador = 4
+while ingreso != '4':
+    if ingreso == "1":
+        print("Usted ha ingresado la opción 1")
+        deposito = int(input("Ingrese un importe a depositar: "))
+        saldo_inicial += deposito
+        print('Su nuevo saldo es:', saldo_inicial)
+        # contador = 1
+        # callbacks()
 
+    elif ingreso == "2":
+        print("Usted ha ingresado la opción 2")
+        extraccion = int(input("Ingrese un importe a extraer: "))
 
-if ingreso == "1":
-    print("Usted ha ingresado la opción 1")
-    saldo = int(input("Ingrese un importe a depositar: "))
-    saldo_inicial += saldo
-    print( 'Su nuevo saldo es:', saldo_inicial)
-    contador = 1
+        if extraccion <= saldo_inicial:
+            saldo_inicial -= extraccion
+            print('Su nuevo saldo es:', saldo_inicial)
+            # contador = 2
+        else:
+            print('Lo ingresado es mayor a lo disponible')
 
-elif ingreso == "2":
-     print("Usted ha ingresado la opción 2")
-     saldo = int(input("Ingrese un importe a extraer: "))
-     saldo_inicial -= saldo
-     print( 'Su nuevo saldo es:', saldo_inicial)
-     contador = 2
+    elif ingreso == "3":
+        print('Su saldo es:', saldo_inicial)
 
+    ingreso = input("Ingrese su selección: ")
 
-elif ingreso == "3":
-    saldo = saldo_inicial 
-    print(saldo)   
-    contador = 3
+    #if ingreso == "1" or ingreso == "2":
+        #saldo_inicial += int(ingreso)
 
-else:
-    ingreso <= "4",
-    print("Retire su tarjeta") 
-    contador = 4
+print("Retire su tarjeta")
 
     
     #3)      Deberá continuar con el ejercicio 2 y escribir la lógica del cajero automático de la siguiente manera.
